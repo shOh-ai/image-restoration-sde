@@ -16,24 +16,24 @@ degradation:
   noise_type: G # Gaussian noise: G
 
   # for super-resolution
-  scale: 4
+  scale: 1 #수정했음 (4 -> 1, 우리의 경우 LQ와 GT 둘 다 크기 같음)
 
 datasets:
   test1:
-    name: Val_Dataset
+    name: test_data
     mode: LQGT
-    dataroot_GT: /home/ziwlu/datasets/gopro/test_full/GT
-    dataroot_LQ: /home/ziwlu/datasets/gopro/test_full/LQ
+    dataroot_GT: /media/hdd0/OSH/Task1/test_data/GT # #수정했음 (각자 경로맡게 수정 필요)
+    dataroot_LQ: /media/hdd0/OSH/Task1/test_data/LQ # #수정했음 (각자 경로맡게 수정 필요)
 
 #### network structures
 network_G:
   which_model_G: ConditionalUNet
   setting:
-    in_nc: 3
-    out_nc: 3
+    in_nc: 1 # #수정했음 (grayscale image 이므로)
+    out_nc: 1 # #수정했음 (grayscale image 이므로)
     nf: 64
     depth: 4
 
 #### path
 path:
-  pretrain_model_G: pretrained/ir-sde.pth
+  pretrain_model_G: pretrained/ir-sde.pth # #수정했음 ()
