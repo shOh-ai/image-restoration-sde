@@ -24,8 +24,8 @@ datasets:
   train:
     name: Train_Dataset
     mode: LQGT
-    dataroot_GT: /media/hdd0/OSH/Task1/train_data/GT # #수정했음 (개인에 맞게 수정 필요함)
-    dataroot_LQ: /media/hdd0/OSH/Task1/train_data/LQ # #수정했음 (개인에 맞게 수정 필요함)
+    dataroot_GT: /media/hdd0/OSH/Task1/train_data/GT # 수정했음 (개인에 맞게 수정 필요함)
+    dataroot_LQ: /media/hdd0/OSH/Task1/train_data/LQ # 수정했음 (개인에 맞게 수정 필요함)
 
     use_shuffle: true
     n_workers: 4  # per GPU
@@ -38,8 +38,8 @@ datasets:
   val:
     name: Val_Dataset
     mode: LQGT
-    dataroot_GT: /media/hdd0/OSH/Task1/validation_data/GT # #수정했음 (개인에 맞게 수정 필요함)
-    dataroot_LQ: /media/hdd0/OSH/Task1/validation_data/LQ # #수정했음 (개인에 맞게 수정 필요함)
+    dataroot_GT: /media/hdd0/OSH/Task1/validation_data/GT # 수정했음 (개인에 맞게 수정 필요함)
+    dataroot_LQ: /media/hdd0/OSH/Task1/validation_data/LQ # 수정했음 (개인에 맞게 수정 필요함)
 
 
 #### network structures
