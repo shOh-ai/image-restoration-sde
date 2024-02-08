@@ -32,8 +32,8 @@ datasets:
     batch_size: 4
     GT_size: 128
     LR_size: 128
-    use_flip: false
-    use_rot: false
+    use_flip: false # 수정했음(augmentation 안함)
+    use_rot: false # 수정했음(augmentation 안함)
     color: Grayscale # 수정했음 (grayscale image 이므로)
   val:
     name: Val_Dataset
