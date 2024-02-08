@@ -1,4 +1,8 @@
-### LQ와 GT의 파일들은 정렬 순서로 pairing이 되므로 대응되는 LQ와 GT 파일(png)을 잘 설정해야 함
+### LQ와 GT의 파일들은 정렬 순서로 pairing이 되므로 대응되는 LQ와 GT 파일(png)을 잘 설정해야 합니다.(하단 예시)<br>
+*LQ: RFdata_1_8_1_256_norm.png, RFdata_1_8_2_256_norm.png, ...
+*GT: RFdata_1_8_1_1024_norm.png, RFdata_1_8_1_1024_norm.png, ...
+
+### (Deblurring 예시): codes/config/deblurring/options/train 안에 ir-sde.yml 파일이 있습니다. 해당 파일에서 dataroot를 개인 설정에 맞게 수정해야 합니다.<br>
  
 ## Image Restoration SDE <br><sub>Official PyTorch Implementations of [[IR-SDE]](https://proceedings.mlr.press/v202/luo23b.html)(ICML 2023) and [[Refusion]](https://arxiv.org/abs/2304.08291)(CVPRW 2023). </sub>
 
