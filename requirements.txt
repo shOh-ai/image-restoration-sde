@@ -13,3 +13,7 @@ torchsummaryX==1.3.0
 torchvision==0.14.0
 tqdm
 gradio
+scikit-learn
+scikit-image
+tensorboard
+ema-pytorch
