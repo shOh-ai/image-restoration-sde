@@ -18,26 +18,26 @@ datasets:
   train:
     name: Train_Dataset
     mode: GT
-    dataroot_GT: /home/ziwlu/datasets/trainHR
+    dataroot_GT: /media/hdd0/OSH/Task1/train_data/GT # 수정했음 (개인에 맞게 수정 필요함)
 
-    use_shuffle: true
+    use_shuffle: false 
     n_workers: 4  # per GPU
     batch_size: 8
     GT_size: 128
-    use_flip: true
-    use_rot: true
-    color: RGB
+    use_flip: false # 수정했음(augmentation 안함)
+    use_rot: false # 수정했음(augmentation 안함)
+    color: Grayscale # 수정했음(grayscale image이므로)
   val:
     name: Test_Dataset
     mode: GT
-    dataroot_GT: /home/ziwlu/datasets/testsets/McMaster
+    dataroot_GT: /media/hdd0/OSH/Task1/validation_data/GT # 수정했음 (개인에 맞게 수정 필요함)
 
 #### network structures
 network_G:
   which_model_G: ConditionalUNet
   setting:
-    in_nc: 3
-    out_nc: 3
+    in_nc: 1 # 수정했음(grayscale image이므로)
+    out_nc: 1 # 수정했음(grayscale image이므로)
     nf: 64
     depth: 4
 
