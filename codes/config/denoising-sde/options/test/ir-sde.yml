@@ -13,27 +13,19 @@ degradation:
 
 datasets:
   test1:
-    name: McMaster
+    name: Test_dataset
     mode: GT
-    dataroot_GT: /home/ziwlu/datasets/testsets/McMaster
-  test2:
-    name: Kodak24
-    mode: GT
-    dataroot_GT: /home/ziwlu/datasets/testsets/Kodak24
-  test3:
-    name: CBSD68
-    mode: GT
-    dataroot_GT: /home/ziwlu/datasets/testsets/CBSD68
+    dataroot_GT: /media/hdd0/OSH/Task1/test_data # 수정했음 (개인에 맡게 설정 필요)
 
 #### network structures
 network_G:
   which_model_G: ConditionalUNet
   setting:
-    in_nc: 3
-    out_nc: 3
+    in_nc: 1 # 수정했음
+    out_nc: 1 # 수정했음
     nf: 64
     depth: 4
 
 #### path
 path:
-  pretrain_model_G: pretrained/ir-sde.pth
+  pretrain_model_G: /media/hdd0/OSH/Task1/sde/experiments/denoising-sde/ir-sde.pth # 수정했음 (개인에 맡게 설정 필요)
