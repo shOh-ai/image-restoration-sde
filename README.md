@@ -1,4 +1,5 @@
-
+### LQ와 GT의 파일들은 정렬 순서로 pairing이 되므로 대응되는 LQ와 GT 파일(png)을 잘 설정해야 함
+ 
 ## Image Restoration SDE <br><sub>Official PyTorch Implementations of [[IR-SDE]](https://proceedings.mlr.press/v202/luo23b.html)(ICML 2023) and [[Refusion]](https://arxiv.org/abs/2304.08291)(CVPRW 2023). </sub>
 
 [Ziwei Luo](https://algolzw.github.io/), 
