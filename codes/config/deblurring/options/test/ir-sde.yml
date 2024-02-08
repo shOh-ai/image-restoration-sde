@@ -22,8 +22,8 @@ datasets:
   test1:
     name: test_data
     mode: LQGT
-    dataroot_GT: /media/hdd0/OSH/Task1/test_data/GT # #수정했음 (각자 경로맡게 수정 필요)
-    dataroot_LQ: /media/hdd0/OSH/Task1/test_data/LQ # #수정했음 (각자 경로맡게 수정 필요)
+    dataroot_GT: /media/hdd0/OSH/Task1/test_data/GT # #수정했음 (각자 경로에 맞게 수정 필요)
+    dataroot_LQ: /media/hdd0/OSH/Task1/test_data/LQ # #수정했음 (각자 경로에 맞게 수정 필요)
 
 #### network structures
 network_G:
@@ -36,4 +36,4 @@ network_G:
 
 #### path
 path:
-  pretrain_model_G: pretrained/ir-sde.pth
+  pretrain_model_G: /media/hdd0/OSH/Task1/sde/experiments/deblurring/ir-sde.pth # 수정했음 (절대경로로 수정함, 각자 경로에 맞게 수정 필요)
