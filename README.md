@@ -1,18 +1,18 @@
-### 1. codes/data/LQGT_dataset.py에 대하여 grayscale 이미지에 맞도록 코드를 수정하였으니 참고바랍니다.<br>
+#### 1. codes/data/LQGT_dataset.py에 대하여 grayscale 이미지에 맞도록 코드를 수정하였으니 참고바랍니다.<br>
 
-### 2. 현재 코드는 grayscale 이미지에 맞도록 color 이미지일 때에 필요한 요소를 모두 주석처리 하거나 변경하였으니 참고바랍니다.<br>
+#### 2. 현재 코드는 grayscale 이미지에 맞도록 color 이미지일 때에 필요한 요소를 모두 주석처리 하거나 변경하였으니 참고바랍니다.<br>
 
-### 3. (Deblurring 예시): codes/config/deblurring/options/train 안에 ir-sde.yml 파일이 있습니다. 해당 파일의 내용을 grayscale 이미지에 맞도록 코드를 수정하였으며, 현재 학습 및 평가하는 데이터의 경우, 이미 LQ와 GT의 size가 동일하므로 scale factor는 1로 수정하였습니다.<br>
+#### 3. (Deblurring 예시): codes/config/deblurring/options/train 안에 ir-sde.yml 파일이 있습니다. 해당 파일의 내용을 grayscale 이미지에 맞도록 코드를 수정하였으며, 현재 학습 및 평가하는 데이터의 경우, 이미 LQ와 GT의 size가 동일하므로 scale factor는 1로 수정하였습니다.<br>
 
-### 4. (Deblurring 예시): codes/config/deblurring/options/train 안에 ir-sde.yml 파일이 있습니다. 해당 파일에서 dataroot를 개인 설정에 맞게 수정해야 합니다.<br>
+#### 4. (Deblurring 예시): codes/config/deblurring/options/train 안에 ir-sde.yml 파일이 있습니다. 해당 파일에서 dataroot를 개인 설정에 맞게 수정해야 합니다.<br>
 
-### 5. (Deblurring 예시): codes/config/deblurring/options/test 안에 ir-sde.yml 파일이 있습니다. 해당 파일에서 dataroot, 그리고 모델 학습을 진행한 후 생성되는 ir-sde.pth 파일의 경로를 개인 설정에 맞게 수정해야 합니다.<br>
+#### 5. (Deblurring 예시): codes/config/deblurring/options/test 안에 ir-sde.yml 파일이 있습니다. 해당 파일에서 dataroot, 그리고 모델 학습을 진행한 후 생성되는 ir-sde.pth 파일의 경로를 개인 설정에 맞게 수정해야 합니다.<br>
 
-### 6. LQ와 GT의 파일들은 정렬 순서로 pairing이 되므로 대응되는 LQ와 GT 파일(png)을 잘 설정해야 합니다.(하단 예시)<br>
+#### 6. LQ와 GT의 파일들은 정렬 순서로 pairing이 되므로 대응되는 LQ와 GT 파일(png)을 잘 설정해야 합니다.(하단 예시)<br>
 *LQ: RFdata_1_8_1_256_norm.png, RFdata_1_8_2_256_norm.png, ...<br>
 *GT: RFdata_1_8_1_1024_norm.png, RFdata_1_8_1_1024_norm.png, ... <br>
 
-### 7. '1~6'까지의 setting이 끝나면, 하단의 Train과 Evaluation 커멘드를 이용해서 학습 및 평가를 진행하면 되겠습니다. <br>
+#### 7. '1~6'까지의 setting이 끝나면, 하단의 Train과 Evaluation 커멘드를 이용해서 학습 및 평가를 진행하면 되겠습니다. <br>
  
 ## Image Restoration SDE <br><sub>Official PyTorch Implementations of [[IR-SDE]](https://proceedings.mlr.press/v202/luo23b.html)(ICML 2023) and [[Refusion]](https://arxiv.org/abs/2304.08291)(CVPRW 2023). </sub>
 
